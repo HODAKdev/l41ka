@@ -16,7 +16,7 @@ env:
 
 jobs:
   build:
-    name: Build waveshare_rp2350_usb_a
+    name: Build pico2
     runs-on: macos-15
     timeout-minutes: 60
 
@@ -80,7 +80,7 @@ jobs:
       - name: Upload firmware
         uses: actions/upload-artifact@v4
         with:
-          name: l41ka-waveshare-rp2350-usb-a
+          name: l41ka-pico2
           path: build/l41ka.*
           if-no-files-found: error
           retention-days: 14
